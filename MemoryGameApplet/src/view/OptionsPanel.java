@@ -29,7 +29,7 @@ public class OptionsPanel extends JFrame implements ActionListener
     final ArrayList<String> selectedShapes = new ArrayList<String>();
     JButton play = new JButton("Play!");
     
-    public OptionsPanel(Player player, final SimonSaysController sscgame){
+    public OptionsPanel(final Player player, final SimonSaysController sscgame){
         super("Options");
         
 
@@ -155,6 +155,9 @@ public class OptionsPanel extends JFrame implements ActionListener
                 */
                 
                 setVisible(false);
+                final PlayPanel pp = new PlayPanel(player, numObjects.getSelectedIndex()+4, layout, selectedSize, selectedColors, selectedShapes);
+                pp.setVisible(true);
+                pp.setSize(100, 100);
             }
         });
         
