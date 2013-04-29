@@ -1,5 +1,6 @@
 package model;
 
-public interface ISimonSaysObserver {
-	void update(SimonSays ss);
+public interface ISimonSaysObserver
+{
+    void update(SimonSays ss);
 }

@@ -1,35 +1,40 @@
 package model;
 
-//TODO Implement the GameObject class
 public class GameObject
 {
-	// Instance Variables
-	private int size;
-	private String color;
-	private int id;
-	private int type;
-	
-	
-	GameObject(int aSize, String aColor, int aId, int aType){
-		size = aSize;
-		color = aColor;
-		id = aId;
-		aType = type;
-	}
-	
-	public int getSize(){
-		return size;
-	}
-	
-	public String getColor(){
-		return color;
-	}
-	
-	public int getId(){
-		return id;
-	}
-	
-	public int getType(){
-		return type;
-	}
+    // Final Static Variables
+    final public int SQUARE = 0;
+    final public int TRIANGLE = 1;
+    final public int CIRCLE = 2;
+
+    final public int RED = 0;
+    final public int BLUE = 1;
+    final public int GREEN = 2;
+    final public int PURPLE = 3;
+    final public int ORANGE = 4;
+    final public int YELLOW = 5;
+
+    // Instance Variables
+    private int color;
+    private int id;
+    private int shape;
+
+
+    GameObject(int aShape, int aColor, int aId){
+        color = aColor;
+        id = aId;
+        shape = aShape;
+    }
+
+    public int getColor(){
+        return color;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public int getShape(){
+        return shape;
+    }
 }
